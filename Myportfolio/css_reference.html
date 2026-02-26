@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study CSS</title>
+    <link rel="stylesheet" href="reference.css">
+</head>
+<body>
+      <section class="css">
+    <h1>CSS Study Notes</h1>
+
+    <section>
+    <h2>Who Invented CSS?</h2>
+    <p>CSS was invented by <strong>Håkon Wium Lie</strong>.</p>
+    </section>
+    
+    <div class="category">
+    <h2>Selectors</h2>
+
+    <section><pre><code>p {
+    color:red;
+    }
+    /* Element selector targets all p elements */</code></pre></section>
+
+    <section><pre><code>.box {
+    background:blue;
+    }
+    /* Class selector targets elements with class="box" */</code></pre></section>
+
+    <section><pre><code>#header {
+    background:black;
+    }
+    /* ID selector targets element with id="header" */</code></pre></section>
+
+    </div>
+
+
+    <div class="category">
+    <h2>Box Model</h2>
+
+    <section><pre><code>div{
+    margin:20px;
+    }
+    /* margin creates space outside element */</code></pre></section>
+
+    <section><pre><code>div{
+    padding:20px;
+    }
+    /* padding creates space inside element */</code></pre></section>
+
+    <section><pre><code>div{
+    border:1px solid white;
+    }
+    /* border creates outline around element */</code></pre></section>
+
+    </div>
+
+
+    <div class="category">
+    <h2>Text Styling</h2>
+
+    <section><pre><code>p{
+    color:red;
+    }
+    /* changes text color */</code></pre></section>
+
+    <section><pre><code>p{
+    font-size:20px;
+    }
+    /* changes text size */</code></pre></section>
+
+    <section><pre><code>p{
+    font-weight:bold;
+    }
+    /* makes text bold */</code></pre></section>
+
+    <section><pre><code>p{
+    text-align:center;
+    }
+    /* aligns text */</code></pre></section>
+
+    </div>
+
+
+    <div class="category">
+    <h2>Display &amp; Layout</h2>
+
+    <section><pre><code>div{
+    display:block;
+    }
+    /* block takes full width */</code></pre></section>
+
+    <section><pre><code>div{
+    display:inline;
+    }
+    /* inline takes content width */</code></pre></section>
+
+    <section><pre><code>div{
+    display:flex;
+    }
+    /* enables flexbox layout */</code></pre></section>
+
+    <section><pre><code>div{
+    display:grid;
+    }
+    /* enables grid layout */</code></pre></section>
+
+    </div>
+
+
+    <div class="category">
+    <h2>Flexbox</h2>
+
+    <section><pre><code>.container{
+    display:flex;
+    justify-content:center;
+    }
+    /* horizontal alignment */</code></pre></section>
+
+    <section><pre><code>.container{
+    align-items:center;
+    }
+    /* vertical alignment */</code></pre></section>
+
+    <section><pre><code>.container{
+    gap:20px;
+    }
+    /* space between items */</code></pre></section>
+
+    </div>
+
+
+    <div class="category">
+    <h2>Grid</h2>
+
+    <section><pre><code>.container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    }
+    /* creates two equal columns */</code></pre></section>
+
+    <section><pre><code>.container{
+    gap:20px;
+    }
+    /* space between grid items */</code></pre></section>
+
+    </div>
+
+    <div class="category">
+    <h2>Position</h2>
+
+    <section><pre><code>div{
+    position:relative;
+    }
+    /* relative to itself */</code></pre></section>
+
+    <section><pre><code>div{
+    position:absolute;
+    }
+    /* relative to parent */</code></pre></section>
+
+    <section><pre><code>div{
+    position:fixed;
+    }
+    /* fixed on screen */</code></pre></section>
+
+    </div>
+
+    <div class="category">
+    <h2>Effects</h2>
+
+    <section><pre><code>button:hover{
+    background:red;
+    }
+    /* hover effect */</code></pre></section>
+
+    <section><pre><code>div{
+    transition:0.3s;
+    }
+    /* smooth animation */</code></pre></section>
+
+    <section><pre><code>div{
+    transform:scale(1.1);
+    }
+    /* scales element */</code></pre></section>
+
+    </div>
+
+    <div class="category">
+    <h2>Responsive Design</h2>
+
+    <section><pre><code>@media (max-width:768px){
+    body{
+    background:red;
+    }
+    }
+    /* applies style on small screens */</code></pre></section>
+
+    </div>
+
+    <div class="category">
+    <h2>Animations</h2>
+
+    <section><pre><code>@keyframes move{
+    from{left:0;}
+    to{left:100px;}
+    }
+    /* defines animation */</code></pre></section>
+
+    <section><pre><code>div{
+    animation:move 1s;
+    }
+    /* applies animation */</code></pre></section>
+
+    </div>
+    </section>
+
+    <section class="revision">
+<h1>css technical revision </h1>
+
+<table class="styled-table">
+<thead>
+<tr>
+<th>المجموعة</th>
+<th>الخاصية</th>
+<th>الوظيفة / الشرح</th>
+<th>مثال عملي</th>
+<th>الحاجات المتشابهة والفروق</th>
+</tr>
+</thead>
+<tbody>
+
+<!-- Display Types -->
+<tr>
+<td rowspan="5">Display Types</td>
+<td>block</td>
+<td>العنصر يبدأ في سطر جديد ويأخذ العرض كامل</td>
+<td><pre>div { display:block; }</pre></td>
+<td rowspan="5">
+- block vs inline: block يبدأ سطر جديد، inline لا<br>
+- inline-block: يقبل width/height<br>
+- flex/grid: لتخطيط الأبناء
+</td>
+</tr>
+<tr>
+<td>inline</td>
+<td>العنصر يبقى في نفس السطر مع الآخرين، لا يقبل width/height</td>
+<td><pre>span { display:inline; }</pre></td>
+</tr>
+<tr>
+<td>inline-block</td>
+<td>يشبه inline لكن يقبل width/height</td>
+<td><pre>div { display:inline-block; width:100px; }</pre></td>
+</tr>
+<tr>
+<td>flex</td>
+<td>تخطيط مرن للأبناء داخل العنصر</td>
+<td><pre>.container { display:flex; justify-content:center; }</pre></td>
+</tr>
+<tr>
+<td>grid</td>
+<td>تخطيط شبكي للصفوف والأعمدة للأبناء</td>
+<td><pre>.container { display:grid; grid-template-columns:1fr 2fr; }</pre></td>
+</tr>
+
+<!-- Positioning -->
+<tr>
+<td rowspan="4">Positioning</td>
+<td>relative</td>
+<td>العنصر يتحرك نسبة لمكانه الأصلي</td>
+<td><pre>.rel { position:relative; top:10px; }</pre></td>
+<td rowspan="4">
+- relative vs absolute: relative يتحرك من مكانه الأصلي، absolute يخرج من التدفق<br>
+- fixed: ثابت بالنسبة للنافذة<br>
+- sticky: يمزج relative و fixed
+</td>
+</tr>
+<tr>
+<td>absolute</td>
+<td>العنصر يتحرك بالنسبة لأقرب أب position!=static، يخرج من التدفق</td>
+<td><pre>.abs { position:absolute; top:0; left:0; }</pre></td>
+</tr>
+<tr>
+<td>fixed</td>
+<td>العنصر ثابت بالنسبة للنافذة مهما تم التمرير</td>
+<td><pre>.fixed { position:fixed; bottom:0; }</pre></td>
+</tr>
+<tr>
+<td>sticky</td>
+<td>يمزج بين relative و fixed، يلتصق عند نقطة معينة أثناء التمرير</td>
+<td><pre>.sticky { position:sticky; top:0; }</pre></td>
+</tr>
+
+<!-- Units -->
+<tr>
+<td rowspan="4">Units</td>
+<td>px</td>
+<td>وحدات ثابتة</td>
+<td><pre>div { width:200px; }</pre></td>
+<td rowspan="4">
+- px ثابت<br>
+- % يعتمد على العنصر الأب<br>
+- em يعتمد على حجم الخط الحالي للعنصر<br>
+- rem يعتمد على حجم الخط الأساسي html
+</td>
+</tr>
+<tr>
+<td>%</td>
+<td>نسبة من العنصر الأب</td>
+<td><pre>div { width:50%; }</pre></td>
+</tr>
+<tr>
+<td>em</td>
+<td>يعتمد على حجم خط العنصر الحالي</td>
+<td><pre>p { font-size:2em; }</pre></td>
+</tr>
+<tr>
+<td>rem</td>
+<td>يعتمد على حجم الخط الأساسي للصفحة</td>
+<td><pre>p { font-size:2rem; }</pre></td>
+</tr>
+
+<!-- Visibility -->
+<tr>
+<td rowspan="3">Visibility</td>
+<td>display:none</td>
+<td>العنصر يختفي ولا يأخذ مساحة</td>
+<td><pre>.hide { display:none; }</pre></td>
+<td rowspan="3">
+- display:none: يختفي تمامًا<br>
+- visibility:hidden: مخفي لكن يأخذ مساحة<br>
+- opacity:0: شفاف لكنه موجود
+</td>
+</tr>
+<tr>
+<td>visibility:hidden</td>
+<td>مخفي لكن يأخذ مساحة في الصفحة</td>
+<td><pre>.hide2 { visibility:hidden; }</pre></td>
+</tr>
+<tr>
+<td>opacity:0</td>
+<td>شفاف لكن موجود ويأخذ مساحة</td>
+<td><pre>.hide3 { opacity:0; }</pre></td>
+</tr>
+
+<!-- Text Styling -->
+<tr>
+<td rowspan="3">Text Styling</td>
+<td>bold / font-weight</td>
+<td>تحكم في وزن النص</td>
+<td><pre>p { font-weight:bold; }</pre></td>
+<td rowspan="3">
+- bold vs font-weight: نفس الوظيفة<br>
+- italic / font-style<br>
+- underline / text-decoration
+</td>
+</tr>
+<tr>
+<td>italic / font-style</td>
+<td>تحكم في ميل النص</td>
+<td><pre>p { font-style:italic; }</pre></td>
+</tr>
+<tr>
+<td>underline / text-decoration</td>
+<td>تحكم في خط تحت النص</td>
+<td><pre>p { text-decoration:underline; }</pre></td>
+</tr>
+
+<!-- Flex & Grid -->
+<tr>
+<td rowspan="3">Flex & Grid</td>
+<td>justify-content / align-items</td>
+<td>توزيع العناصر داخل flex أو grid</td>
+<td><pre>.container { display:flex; justify-content:center; align-items:center; }</pre></td>
+<td rowspan="3">
+- justify-content / align-items: توزيع العناصر<br>
+- grid-gap / gap: المسافة بين العناصر<br>
+- align-self / justify-self: التحكم الفردي لكل عنصر
+</td>
+</tr>
+<tr>
+<td>grid-gap / gap</td>
+<td>المسافة بين الأعمدة والصفوف</td>
+<td><pre>.container { display:grid; grid-gap:10px; }</pre></td>
+</tr>
+<tr>
+<td>align-self / justify-self</td>
+<td>تحكم فردي في عنصر داخل flex أو grid</td>
+<td><pre>.item { align-self:flex-start; }</pre></td>
+</tr>
+
+<!-- Effects -->
+<tr>
+<td rowspan="4">Effects</td>
+<td>box-shadow</td>
+<td>إضافة ظل حول العنصر</td>
+<td><pre>div { box-shadow:2px 2px 10px rgba(0,0,0,0.3); }</pre></td>
+<td rowspan="4">
+- box-shadow vs border: الظل والخطوط<br>
+- opacity vs visibility vs display:none<br>
+- transition يحرك التغييرات بسلاسة
+</td>
+</tr>
+<tr>
+<td>border-radius</td>
+<td>جعل حواف العنصر دائرية</td>
+<td><pre>div { border-radius:10px; }</pre></td>
+</tr>
+<tr>
+<td>opacity</td>
+<td>تغيير شفافية العنصر</td>
+<td><pre>div { opacity:0.5; }</pre></td>
+</tr>
+<tr>
+<td>transition</td>
+<td>تأثير سلس عند تغيير الخصائص</td>
+<td><pre>div { transition:all 0.3s; } div:hover { transform:scale(1.05); }</pre></td>
+</tr>
+
+<!-- Animations -->
+<tr>
+<td rowspan="3">Animations</td>
+<td>@keyframes</td>
+<td>تعريف حركة أو تأثير متكرر</td>
+<td><pre>@keyframes move { from { left:0; } to { left:100px; } }</pre></td>
+<td rowspan="3">
+- animation vs transition: transition بدون keyframes<br>
+- keyframes لتعريف حركة كاملة
+</td>
+</tr>
+<tr>
+<td>animation</td>
+<td>تطبيق الحركة مع المدة والتكرار</td>
+<td><pre>div { animation:move 2s infinite; }</pre></td>
+</tr>
+<tr>
+<td>transition</td>
+<td>تغيير سلس للخصائص بدون keyframes</td>
+<td><pre>button { transition:background 0.3s; } button:hover { background:#009879; }</pre></td>
+</tr>
+
+<!-- Colors & Backgrounds -->
+<tr>
+<td rowspan="3">Colors & Backgrounds</td>
+<td>background-color</td>
+<td>لون خلفية العنصر</td>
+<td><pre>div { background-color:#009879; }</pre></td>
+<td rowspan="3">
+- color vs background-color<br>
+- gradient backgrounds<br>
+- opacity تؤثر على اللون
+</td>
+</tr>
+<tr>
+<td>background-image / gradient</td>
+<td>خلفية بصورة أو تدريج لوني</td>
+<td><pre>div { background-image:linear-gradient(to right, red, yellow); }</pre></td>
+</tr>
+<tr>
+<td>color</td>
+<td>لون النصوص</td>
+<td><pre>p { color:#333; }</pre></td>
+</tr>
+
+<!-- Responsive Design -->
+<tr>
+<td rowspan="2">Responsive Design</td>
+<td>media queries</td>
+<td>تغيير التصميم حسب حجم الشاشة</td>
+<td><pre>@media (max-width:768px) { body{ font-size:14px; } }</pre></td>
+<td rowspan="2">
+- media queries للتحكم في التصميم على أجهزة مختلفة<br>
+- relative units %, em, rem تجعل التصميم متجاوب
+</td>
+</tr>
+<tr>
+<td>relative units (%, em, rem)</td>
+<td>حجم العناصر والنصوص يتغير حسب العنصر الأب أو الصفحة</td>
+<td><pre>div { width:50%; font-size:1.2rem; }</pre></td>
+</tr>
+
+</tbody>
+</table>
+</section>
+
+</body>
+</html>
