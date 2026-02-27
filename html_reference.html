@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study HTML</title>
+    <link rel="stylesheet" href="reference.css">
+</head>
+<body>
+            <section class="HTML">
+            <h1>HTML Study Notes</h1>
+            
+            <section>
+                <h2>What Does HTML Mean?</h2>
+                <p>HTML means <strong>Hyper Text Markup Language</strong>.</p>
+            </section>
+            
+            <section>
+                <h2>Who Invented HTML?</h2>
+    <p>HTML was invented by <strong>Tim Berners-Lee</strong>.</p>
+</section>
+
+<section>
+    <h2>Document Type Declaration</h2>
+    <pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+</section>
+
+
+<section>
+    <h2>Headers</h2>
+    <p>HTML has 6 headings from h1 to h6. h1 is the most important, h6 is the smallest one .</p>
+    <pre><code>&lt;h1&gt;This is a heading&lt;/h1&gt;</code></pre>
+    <p> we  use  to make  the  main  heading  of  the  page</p>
+    <p> there  is  another heading  type  like  header  </p>
+    <pre><code>&lt;header&gt;
+        <p> we use it as a container to  put  inside  it  the  nav  bar  or  somthing  like  that   </p>
+        
+    </section>
+    
+    <section>
+        <h2>Nav</h2>
+        <pre><code>&lt;nav&gt;This is a navigation bar.&lt;/nav&gt;</code></pre>
+        <p> we use it to make a navigation bar for the page or  to make  a shortcuts  </p>
+    </section>  
+    
+    <Section>
+        <h2>Sidebar</h2>
+        <pre><code>&lt;aside&gt;This is a sidebar.&lt;/aside&gt;
+            <p> we use it to make a sidebar or side content like  the  nav  bar  but  is the  side  of  the  page </p>
+        </code></pre>
+    </Section>
+    
+    <section>
+        <h2>Main</h2>
+        <pre><code>&lt;main&gt;This is the main content.&lt;/main&gt;</code></pre>
+        <p> we use it to make the main content of the page </p>
+    </section>  
+    
+    <section>
+        <h2>Footer</h2>
+        <pre><code>&lt;footer&gt;This is a footer.&lt;/footer&gt;
+            <p> we use it to make a footer for the page or copy rights </p>
+        </code></pre>
+    </section>
+
+    <Section>
+        <h2>Section</h2>
+    <pre><code>&lt;section&gt;This is a section.&lt;/section&gt;</code></pre>
+    </Section>
+
+
+    <Section>
+    <h2>Article</h2>
+    <pre><code>&lt;article&gt;This is an article.&lt;/article&gt;</code></pre>
+    <p> we use it to make an article or by another meaning post   </p>
+    </Section>
+
+
+<section>
+    <h2>HTML Semantic Elements Comparison</h2>
+
+    <table class="comparison">
+        <tr>
+            <th>العنصر</th>
+            <th>وظيفته</th>
+        </tr>
+
+        <tr>
+            <td>&lt;header&gt;</td>
+            <td>مقدمة الصفحة أو القسم</td>
+        </tr>
+
+        <tr>
+            <td>&lt;nav&gt;</td>
+            <td>روابط التنقل</td>
+        </tr>
+
+        <tr>
+            <td>&lt;main&gt;</td>
+            <td>المحتوى الرئيسي للصفحة</td>
+        </tr>
+
+        <tr>
+            <td>&lt;footer&gt;</td>
+            <td>معلومات ختامية</td>
+        </tr>
+
+        <tr>
+            <td>&lt;section&gt;</td>
+            <td>تقسيم داخل المحتوى</td>
+        </tr>
+
+        <tr>
+            <td>&lt;article&gt;</td>
+            <td>مقال أو محتوى مستقل بذاته</td>
+        </tr>
+
+    </table>
+</section>
+
+
+
+
+<section>
+    <h2>Button</h2>
+    <pre><code>&lt;button&gt;Click me&lt;/button&gt;
+        &lt;p&gt;We use it to create clickable buttons for actions.&lt;/p&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Input</h2>
+    <pre><code>&lt;input type="text"&gt;
+        &lt;p&gt;We use it to allow users to enter data.&lt;/p&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>&lt;label&gt;</h2>
+    <pre><code>&lt;label&gt;Example&lt;/label&gt;
+        &lt;p&gt;We use it to label an input field&lt;/p&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>&lt;textarea&gt;</h2>
+    <pre><code>&lt;textarea&gt;Example&lt;/textarea&gt;
+        &lt;p&gt;We use it to create multiline input&lt;/p&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Form</h2>
+    <pre><code>&lt;form&gt;
+        &lt;input type="text"&gt;
+        &lt;/form&gt;
+        &lt;p&gt;We use it to collect user input and send data.&lt;/p&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h2>Tooltip Example</h2>
+    <pre><code>&lt;p title="About W3Schools"&gt;W3Schools is a web developer's site.&lt;/p&gt;</code></pre>
+</section>
+
+
+<section>
+    <h2>Form Elements Comparison</h2>
+
+    <table class="comparison">
+        <tr>
+            <th>العنصر</th>
+            <th>وظيفته</th>
+        </tr>
+
+        <tr>
+            <td>&lt;button&gt;</td>
+            <td>زر لتنفيذ إجراء مثل إرسال الفورم أو تشغيل كود</td>
+        </tr>
+
+        <tr>
+            <td>&lt;input&gt;</td>
+            <td>إدخال بيانات من المستخدم (نص، رقم، بريد، اختيار...)</td>
+        </tr>
+
+        <tr>
+            <td>&lt;label&gt;</td>
+            <td>وصف عنصر إدخال وربطه به لتحسين سهولة الاستخدام</td>
+        </tr>
+
+        <tr>
+            <td>&lt;textarea&gt;</td>
+            <td>إدخال نص طويل متعدد الأسطر</td>
+        </tr>
+
+        <tr>
+            <td>&lt;form&gt;</td>
+            <td>حاوية تجمع عناصر الإدخال وترسل البيانات للسيرفر</td>
+        </tr>
+
+    </table>
+</section>
+
+<section>
+    <h2>Image Size</h2>
+    <pre><code>&lt;img src="w3schools.jpg" width="250" height="400"&gt;</code></pre>
+</section>
+
+<section>
+    <h2>Image</h2>
+    <pre><code>&lt;img src="image.jpg" alt="example"&gt;
+        &lt;p&gt;We use it to display images on the webpage.&lt;/p&gt;
+    </code></pre>
+</section>
+
+<p class="Note"> we use it to create links to other pages or websites.<br>
+        the  difference between  a and link  is that  a  is used to create links to other pages or
+        websites while link is used to link external resources like css files or icons
+    </p>
+
+    <section>
+    <h2>Anchor</h2>
+    <pre><code>&lt;a href="https://google.com"&gt;Visit Google&lt;/a&gt;
+    &lt;p&gt;We use it to create links to other pages or websites.&lt;/p&gt;
+    </code></pre>
+    </section>
+    
+    <section>
+        <h2>Link Example</h2>
+        <pre><code>&lt;a href="https://www.w3schools.com"&gt;Visit W3Schools&lt;/a&gt;</code></pre>
+    </section>
+
+
+
+    <section>
+    <h2>Alternate Text</h2>
+    <pre><code>&lt;img src="w3schools.jpg" alt="W3Schools logo"&gt;</code></pre>
+    </section>
+
+<section>
+    <h2>Preformatted Text</h2>
+    <pre><code>&lt;pre&gt;
+        We use it to preserve formatting and display text exactly as it is written, including spaces and line breaks.
+    </pre></code></pre> 
+</section>
+
+
+<section>
+    <h2>Bold & Emphasis</h2>
+    <pre><code>&lt;strong&gt;Bold Text&lt;/strong&gt;
+    <p>We use it to make text important</p>
+    </code></pre>
+
+    <pre><code>
+    <b>Bold Text</b>
+    &lt;em&gt;Emphasized Text&lt;/em&gt;
+    <p>We use it to emphasize text</p>
+    </code></pre>
+    </section>
+    
+
+    <section>
+    <h2>&lt;mark&gt;</h2>
+    <pre><code>&lt;mark&gt;Example&lt;/mark&gt;
+    &lt;p&gt;We use it to highlight text&lt;/p&gt;
+    </code></pre>
+    </section>
+
+    <section>
+    <h2>&lt;small&gt;</h2>
+    <pre><code>&lt;small&gt;Example&lt;/small&gt;
+    &lt;p&gt;We use it to make text smaller&lt;/p&gt;
+    </code></pre>
+    </section>
+
+    <section>
+    <h2>&lt;video&gt;</h2>
+    <pre><code>&lt;video&gt;Example&lt;/video&gt;
+    &lt;p&gt;We use it to embed video&lt;/p&gt;
+    </code></pre>
+    </section>
+
+    <section>
+    <h2>&lt;audio&gt;</h2>
+    <pre><code>&lt;audio&gt;Example&lt;/audio&gt;
+    &lt;p&gt;We use it to embed audio&lt;/p&gt;
+    </code></pre>
+    </section>
+
+    <section>
+    <h2>&lt;iframe&gt;</h2>
+    <pre><code>&lt;iframe&gt;Example&lt;/iframe&gt;
+    &lt;p&gt;We use it to embed another page&lt;/p&gt;
+    </code></pre>
+    </section>
+
+    <section>
+    <h2>&lt;canvas&gt;</h2>
+    <pre><code>&lt;canvas&gt;Example&lt;/canvas&gt;
+    &lt;p&gt;We use it to draw graphics with JS&lt;/p&gt;
+    </code></pre>
+    </section>
+
+
+    <section>
+    <h2>HTML Elements Comparison</h2>
+
+    <table class="comparison">
+        <tr>
+            <th>العنصر / الخاصية</th>
+            <th>وظيفته</th>
+        </tr>
+
+        <tr>
+            <td>&lt;a&gt; (Anchor)</td>
+            <td>رابط ينقل المستخدم إلى صفحة أخرى أو جزء داخل الصفحة</td>
+        </tr>
+
+        <tr>
+            <td>alt (Alternate Text)</td>
+            <td>نص بديل للصور يظهر عند عدم تحميل الصورة أو لتحسين الوصول (Accessibility)</td>
+        </tr>
+
+        <tr>
+            <td>&lt;pre&gt; (Preformatted Text)</td>
+            <td>يعرض النص كما هو، مع المسافات والأسطر الجديدة محفوظة</td>
+        </tr>
+
+        <tr>
+            <td>&lt;b&gt; (Bold)</td>
+            <td>يجعل النص غامق بصريًا فقط، بدون دلالة معنوية</td>
+        </tr>
+
+        <tr>
+            <td>&lt;em&gt; (Emphasis)</td>
+            <td>يشير إلى النص المهم أو المؤكد، غالبًا يُعرض مائل (Italic)</td>
+        </tr>
+
+        <tr>
+            <td>&lt;strong&gt;</td>
+            <td>يشير إلى النص المهم جدًا، عادة يظهر غامق (Bold) ويعطي دلالة معنوية قوية</td>
+        </tr>
+
+        <tr>
+            <td>&lt;mark&gt;</td>
+            <td>يستخدم لتظليل النص (Highlight) لإبرازه</td>
+        </tr>
+
+        <tr>
+            <td>&lt;small&gt;</td>
+            <td>يعرض النص بحجم أصغر من النص العادي</td>
+        </tr>
+
+        <tr>
+            <td>&lt;audio&gt;</td>
+            <td>عنصر لتشغيل ملفات الصوت في الصفحة</td>
+        </tr>
+
+        <tr>
+            <td>&lt;iframe&gt;</td>
+            <td>عنصر لعرض صفحة أو محتوى من موقع آخر داخل الصفحة الحالية</td>
+        </tr>
+
+        <tr>
+            <td>&lt;canvas&gt;</td>
+            <td>مساحة للرسم والرسوميات باستخدام JavaScript (رسم ديناميكي)</td>
+        </tr>
+
+    </table>
+</section>
+
+    <section>
+    <h2>Subscript</h2>
+    <pre><code>&lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;O&lt;/p&gt;</code></pre>
+    <pre><code>H<sub>2</sub>O</code></pre>
+    </section>
+
+    <Section>
+    <h2>Blockquote</h2>
+    <pre><code>&lt;blockquote cite="http://www.worldwildlife.org/who/index.html"&gt;
+
+    <p>Elon Musk said:</p>
+
+    <blockquote>
+    When something is important enough, you do it even if the odds are not in your favor.
+    </blockquote>
+    </blockquote></code></pre> 
+    </Section>
+
+    <section>
+    <h2>Right to Left Text</h2>
+    <pre><code>&lt;p dir="rtl"&gt;This text goes right to left.&lt;/p&gt;</code></pre>
+    </section>
+
+    <Section>
+    <h2>Abbreviation</h2>
+    <pre><code>&lt;p&gt;&lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; was founded in 1948.&lt;/p&gt;</code></pre>
+    </Section>
+
+    <section>
+        <h2>HTML Comment</h2>
+        <pre><code>&lt;!-- This is a comment --&gt;</code></pre>
+    </section>
+
+    <section>
+        <h2>Paragraph</h2>
+        <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+    </section>
+
+
+    <section>
+        <h2>Div</h2>
+        <pre><code>&lt;div&gt;This is a div.&lt;/div&gt;
+            <p> we use it to make a division in the page or to make a container for other elements and  its a block elements  </p>
+        </code></pre>
+        
+    </section>
+
+    <section>
+    <h2>&lt;select&gt;</h2>
+    <pre><code>&lt;select&gt;Example&lt;/select&gt;
+    &lt;p&gt;We use it to create dropdown menu&lt;/p&gt;
+    </code></pre>
+    </section>
+
+    <section>
+    <h2>&lt;option&gt;</h2>
+    <pre><code>&lt;option&gt;Example&lt;/option&gt;
+    &lt;p&gt;We use it to define dropdown option&lt;/p&gt;
+    </code></pre>
+    </section>
+
+    <section>
+        <h2>Break the word</h2>
+        <pre><code>&lt;br&gt;This is a br.&lt;/br&gt;
+        <p> We use it to create line break </p>
+        </code></pre>
+        
+    </section>
+
+    <section>
+        <h2>Breakline</h2>
+        <pre><code>&lt;hr&gt;This is a hr.&lt;/hr&gt;
+        <p>We use it to create horizontal line</p>
+        </code></pre>
+        
+    </section>
+    
+    <section>
+        <h2>Span</h2>
+        <pre><code>&lt;span&gt;This is a span.&lt;/span&gt;
+        <p> we use it to make a span in the page or to make a container for other elements and  its a inline elements  </p>
+        </code></pre>
+        
+    </section>
+
+    
+    
+    <section>
+        <h2>Table</h2>
+        <pre><code>&lt;table&gt;
+            &lt;tr&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;p&gt;We use it to display data in rows and columns.&lt;/p&gt;
+        </code></pre>
+    </section>
+
+    <section>
+    <h2>&lt;ul&gt;</h2>
+    <pre><code>&lt;ul&gt;Example&lt;/ul&gt;
+    &lt;p&gt;We use it to create unordered list&lt;/p&gt;
+    </code></pre>
+    </section>
+
+    <section>
+        <h2>&lt;ol&gt;</h2>
+        <pre><code>&lt;ol&gt;Example&lt;/ol&gt;
+        &lt;p&gt;We use it to create ordered list&lt;/p&gt;
+    </code></pre>
+    </section>
+
+    <section>
+    <h2>&lt;li&gt;</h2>
+    <pre><code>&lt;li&gt;Example&lt;/li&gt;
+    &lt;p&gt;We use it to create list item&lt;/p&gt;
+    </code></pre>
+    </section>
+
+    <section>
+    <h2>&lt;tr&gt;</h2>
+    <pre><code>&lt;tr&gt;Example&lt;/tr&gt;
+    &lt;p&gt;We use it to create table row&lt;/p&gt;
+    </code></pre>
+    </section>
+
+    <section>
+    <h2>&lt;td&gt;</h2>
+    <pre><code>&lt;td&gt;Example&lt;/td&gt;
+    &lt;p&gt;We use it to create table cell&lt;/p&gt;
+    </code></pre>
+    </section>
+
+    <section>
+    <h2>&lt;th&gt;</h2>
+    <pre><code>&lt;th&gt;Example&lt;/th&gt;
+    &lt;p&gt;We use it to create table header cell&lt;/p&gt;
+    </code></pre>
+    </section>
+
+
+    <section>
+    <h2>HTML Elements & Text Formatting Comparison</h2>
+
+    <table class="comparison">
+        <tr>
+            <th>العنصر</th>
+            <th>وظيفته / استخدامه</th>
+        </tr>
+
+        <tr>
+            <td>&lt;sub&gt;</td>
+            <td>يعرض النص كـ "Subscript" أي نص صغير أسفل السطر (مثل H<sub>2</sub>O)</td>
+        </tr>
+
+        <tr>
+            <td>&lt;blockquote&gt;</td>
+            <td>اقتباس طويل من مصدر آخر، عادة يظهر بمسافة بادئة</td>
+        </tr>
+
+        <tr>
+            <td>dir="rtl"</td>
+            <td>يستخدم لجعل اتجاه النص من اليمين لليسار (Right-to-Left)</td>
+        </tr>
+
+        <tr>
+            <td>&lt;abbr&gt;</td>
+            <td>يستخدم للاختصارات ويعرض النص الكامل عند المرور عليه (مثل HTML)</td>
+        </tr>
+
+        <tr>
+            <td>&lt;!-- Comment --&gt;</td>
+            <td>تعليق داخل الكود لا يظهر في الصفحة، يستخدم للتوثيق</td>
+        </tr>
+
+        <tr>
+            <td>&lt;p&gt;</td>
+            <td>فقرة نصية، تستخدم لتقسيم النصوص إلى فقرات</td>
+        </tr>
+
+        <tr>
+            <td>&lt;div&gt;</td>
+            <td>حاوية عامة لتجميع العناصر، لا يظهر تأثير بصري لوحده</td>
+        </tr>
+
+        <tr>
+            <td>&lt;select&gt;</td>
+            <td>قائمة منسدلة (Dropdown) لاختيار قيمة واحدة أو أكثر</td>
+        </tr>
+
+        <tr>
+            <td>&lt;option&gt;</td>
+            <td>عنصر داخل &lt;select&gt; يمثل خيارًا واحدًا يمكن اختياره</td>
+        </tr>
+
+        <tr>
+            <td>word-break: break-word</td>
+            <td>خاصية CSS تستخدم لكسر الكلمات الطويلة داخل العنصر لمنع تجاوز النص</td>
+        </tr>
+
+        <tr>
+            <td>&lt;br&gt;</td>
+            <td>إنشاء سطر جديد (Breakline) داخل النص</td>
+        </tr>
+
+        <tr>
+            <td>&lt;span&gt;</td>
+            <td>عنصر Inline لتنسيق جزء صغير من النص أو لإضافة CSS/JS، لا يضيف خط فاصل</td>
+        </tr>
+
+        <tr>
+            <td>&lt;table&gt;</td>
+            <td>جدول لعرض البيانات في صفوف وأعمدة</td>
+        </tr>
+
+        <tr>
+            <td>&lt;ul&gt;</td>
+            <td>قائمة غير مرتبة (Bulleted List)</td>
+        </tr>
+
+        <tr>
+            <td>&lt;ol&gt;</td>
+            <td>قائمة مرتبة (Numbered List)</td>
+        </tr>
+
+        <tr>
+            <td>&lt;li&gt;</td>
+            <td>عنصر قائمة داخل &lt;ul&gt; أو &lt;ol&gt;</td>
+        </tr>
+
+        <tr>
+            <td>&lt;tr&gt;</td>
+            <td>صف داخل جدول (Table Row)</td>
+        </tr>
+
+        <tr>
+            <td>&lt;td&gt;</td>
+            <td>خلية بيانات داخل صف جدول (Table Data)</td>
+        </tr>
+
+        <tr>
+            <td>&lt;th&gt;</td>
+            <td>خلية رأس داخل جدول (Table Header)، عادة غامقة ومركزية</td>
+        </tr>
+
+    </table>
+</section>
+
+<section>
+    <h2>HTML Entities Reference</h2>
+
+    <table class="comparison">
+        <tr>
+            <th>Entity</th>
+            <th>رمزها</th>
+            <th>وظيفتها / الاستخدام</th>
+        </tr>
+
+        <tr>
+            <td>&amp;lt;</td>
+            <td>&lt;</td>
+            <td>يعرض علامة "أقل من" (<) في الصفحة</td>
+        </tr>
+
+        <tr>
+            <td>&amp;gt;</td>
+            <td>&gt;</td>
+            <td>يعرض علامة "أكبر من" (>) في الصفحة</td>
+        </tr>
+
+        <tr>
+            <td>&amp;amp;</td>
+            <td>&amp;</td>
+            <td>يعرض علامة & في الصفحة</td>
+        </tr>
+
+        <tr>
+            <td>&amp;quot;</td>
+            <td>"</td>
+            <td>يعرض علامة التنصيص المزدوجة " في النص</td>
+        </tr>
+
+        <tr>
+            <td>&amp;apos;</td>
+            <td>'</td>
+            <td>يعرض علامة الاقتباس المفردة ' في النص</td>
+        </tr>
+
+        <tr>
+            <td>&amp;nbsp;</td>
+            <td> </td>
+            <td>مسافة غير قابلة للكسر (Non-Breaking Space)</td>
+        </tr>
+
+        <tr>
+            <td>&amp;copy;</td>
+            <td>©</td>
+            <td>رمز حقوق النشر (Copyright)</td>
+        </tr>
+
+        <tr>
+            <td>&amp;reg;</td>
+            <td>®</td>
+            <td>رمز العلامة المسجلة (Registered)</td>
+        </tr>
+
+        <tr>
+            <td>&amp;trade;</td>
+            <td>™</td>
+            <td>رمز العلامة التجارية (Trademark)</td>
+        </tr>
+
+        <tr>
+            <td>&amp;euro;</td>
+            <td>€</td>
+            <td>رمز العملة الأوروبية اليورو</td>
+        </tr>
+
+        <tr>
+            <td>&amp;pound;</td>
+            <td>£</td>
+            <td>رمز العملة الجنيه الإسترليني</td>
+        </tr>
+
+        <tr>
+            <td>&amp;yen;</td>
+            <td>¥</td>
+            <td>رمز العملة اليابانية الين</td>
+        </tr>
+
+        <tr>
+            <td>&amp;sect;</td>
+            <td>§</td>
+            <td>رمز القسم أو Section</td>
+        </tr>
+
+        <tr>
+            <td>&amp;deg;</td>
+            <td>°</td>
+            <td>رمز الدرجة (Temperature / Angle)</td>
+        </tr>
+
+        <tr>
+            <td>&amp;plusmn;</td>
+            <td>±</td>
+            <td>رمز زائد/ناقص (Plus-Minus)</td>
+        </tr>
+
+        <tr>
+            <td>&amp;times;</td>
+            <td>×</td>
+            <td>رمز الضرب ×</td>
+        </tr>
+
+        <tr>
+            <td>&amp;divide;</td>
+            <td>÷</td>
+            <td>رمز القسمة ÷</td>
+        </tr>
+
+        <tr>
+            <td>&amp;hearts;</td>
+            <td>♥</td>
+            <td>رمز القلب ♥</td>
+        </tr>
+
+        <tr>
+            <td>&amp;diams;</td>
+            <td>♦</td>
+            <td>رمز الماس ♦</td>
+        </tr>
+
+    </table>
+</section>
+
+    </section>
+</body>
+</html>
